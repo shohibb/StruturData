@@ -25,17 +25,17 @@ public class BinaryTree {
         }
     }
     public void preOrder(Node node) {
-        if (root != null) {
-            System.out.println(root.data);
-            preOrder(root.Left);
-            preOrder(root.Right);
+        if (node != null) {
+            System.out.println(node.data + " ");
+            preOrder(node.Left);
+            preOrder(node.Right);
         }
     }
     public void postOrder(Node node) {
-        if (root != null) {
-            postOrder(root.Left);
-            postOrder(root.Right);
-            System.out.println(root.data);
+        if (node != null) {
+            postOrder(node.Left);
+            postOrder(node.Right);
+            System.out.println(node.data + " ");
         }
     }
 }
